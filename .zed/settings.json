@@ -1,0 +1,34 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "linkedProjects": [
+          "./linux-utils/Cargo.toml",
+          "./parallel-zipper/Cargo.toml",
+          "./clean-target/Cargo.toml",
+        ],
+      },
+    },
+  },
+  "agent": {
+    "default_model": {
+      "enable_thinking": false,
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+    },
+    "play_sound_when_agent_done": true,
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Ayu Dark",
+  },
+}
