@@ -1,3 +1,4 @@
+use linux_utils::wunzip;
 fn main() {
-    println!("un zipping the content");
+    wunzip::unzip();
 }
