@@ -8,6 +8,5 @@ fn main() -> anyhow::Result<()> {
     let file_path = std::path::PathBuf::from_str(utils::resolve_arg(&args, "--path").as_str())?
         .canonicalize()?;
     wzip::zip(file_path.as_path())?;
-
     Ok(())
 }
