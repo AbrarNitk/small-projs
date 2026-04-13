@@ -2,9 +2,7 @@ use std::{cmp, io::Read, mem::MaybeUninit};
 
 pub fn zip(file_path: &std::path::Path) -> anyhow::Result<()> {
     let file = std::fs::File::open(file_path)?;
-
     // file.read_exact(buf);
-
     Ok(())
 }
 
